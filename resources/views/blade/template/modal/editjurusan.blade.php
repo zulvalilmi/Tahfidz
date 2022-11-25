@@ -12,13 +12,13 @@
                         @csrf
                         @method('PUT')
                         <div class="form-group">
-                            <label for="jurusan">jenjang</label>
-                            <input value="{{ $row->jenjang }}" type="text" required name="jurusan" class="form-control" id="jurusan">
+                            <label for="jurusan">Jurusan</label>
+                            <input value="{{ $row->jurusan }}" type="text" required name="jurusan" class="form-control" id="jurusan">
                             <input type="hidden" name="id" value="{{ $row->id }}">
                         </div>                
                         <div class="form-group">
-                            <label for="jurusan">jurusan</label>
-                            <input value="{{ $row->jurusan }}" type="text" required name="jurusan" class="form-control" id="jurusan">
+                            <label for="kelas">Kelas</label>
+                            <input value="{{ $row->kelas }}" type="text" required name="kelas" class="form-control" id="jurusan">
                             <input type="hidden" name="id" value="{{ $row->id }}">
                         </div>                
                 </div>

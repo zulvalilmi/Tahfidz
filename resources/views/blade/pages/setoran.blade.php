@@ -45,7 +45,7 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                @include('blade.includes.jurusankelas')
+                @include('blade.includes.setoranmain')
                 <!-- End of Main Content -->
 
                 <!-- Footer -->

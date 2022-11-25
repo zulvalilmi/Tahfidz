@@ -79,7 +79,7 @@
                         <div class="h5 mb-0 font-weight-bold text-gray-800">2</div>
                     </div>
                     <div class="col-auto">
-                        <i class="fas fa-check fa-3x text-gray-300"></i>
+                        <i class="fas fa-user-clock fa-3x text-gray-300"></i>
                     </div>
                 </div>
             </div>

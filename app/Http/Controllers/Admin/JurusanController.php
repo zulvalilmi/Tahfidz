@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 
 class JurusanController extends Controller
 {
+    
     public function index()
     {
         $jurusan = jurusan::all();

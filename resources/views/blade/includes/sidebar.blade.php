@@ -15,7 +15,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="{{ route('welcome.index') }}">
             <i class="fas fa-fw fa-user-circle"></i>
             <span>Beranda</span></a>
     </li>
@@ -52,7 +52,7 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <a class="collapse-item" href="{{ route('jurusan.index') }}">Jurusan/Kelas</a>
-                <a class="collapse-item" href="#">Kelas Tahfidz</a>
+                <a class="collapse-item" href="{{ route('setoran.index') }}">Kelas Tahfidz</a>
                 <a class="collapse-item" href="#">Daftar Guru Pengampu</a>
             </div>
         </div>
