@@ -9,7 +9,16 @@ class Setoran extends Model
 {
     use HasFactory;
 
-    protected $guarded = [];
+    protected $fillable = [
+        'nama_tahfidz'  ,
+        'jurusan_id'    ,
+        'surat_ziyadah' ,
+        'ayat_ziyadah'  ,
+        'surat_murojaah',
+        'ayat_murojaah' ,
+        'foto'          ,
+        'keterangan'    ,
+    ];
 
     
 }

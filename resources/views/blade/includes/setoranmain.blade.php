@@ -30,14 +30,24 @@
                         <th>Ayat Ziyadah</th>
                         <th>Surat Murojaah</th>
                         <th>Ayat Murojaah</th>
-                        <th>Status</th>
                         <th>Keterangan</th>
                         <th>Aksi</th>
                         </tr>
                         </thead>
                         <tbody>
-
+                        @foreach($setoran as $row)
+                            <tr>
+                                <td>{{ $row->foto }}</td>
+                                <td>{{ $row->nama_tahfidz }}</td>
+                                <td>{{ $row->jurusan }}</td>
+                                <td>{{ $row->surat_ziyadah }}</td>
+                                <td>{{ $row->ayat_ziyadah }}</td>
+                                <td>{{ $row->surat_murojaah }}</td>
+                                <td>{{ $row->ayat_murojaah }}</td>
+                                <td>{{ $row->keterangan }}</td>
+                                <td>{{ $row->aksi }}</td>
                         </tbody>
+                        @endforeach
                     </table>
                         </div>
                     </div>

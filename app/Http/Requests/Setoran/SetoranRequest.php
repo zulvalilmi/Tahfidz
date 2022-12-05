@@ -25,7 +25,7 @@ class SetoranRequest extends FormRequest
     {
         return [
             'nama_tahfidz'      => 'required',
-            'jurusan'           => 'required',
+            'jurusan_id'           => 'required',
             'surat_ziyadah'     => 'required',
             'ayat_ziyadah'      => 'required',
             'surat_murojaah'    => 'required',
@@ -38,14 +38,14 @@ class SetoranRequest extends FormRequest
     public function messages()
     {
         return [
-            'nama_tahfidz.required'         => 'Isi Nama Tahfidz pakai guru halaqohnya',
-            'jurusan.required'              => 'Pilih jurusannya yang sesuai',
+            'nama_tahfidz.required'         => 'Isi Nama Tahfidz',
+            'jurusan_id.required'              => 'Pilih jurusannya yang sesuai',
             'surat_ziyadah.required'        => 'Isi Nama suratya',
             'ayat_ziyadah.required'         => 'Isi ayatnya sudah sampai mana yang terakhir',
             'surat_murojaah.required'       => 'Isi Nama surat muorajaahnya',
             'ayat_murojaah.required'        => 'Isi ayat terakhir sudah sampai mana yang terakhir',
             'foto.required'                 => 'Upload Foto Santri',
-            'keterangan.required'            => 'Tuliskan Keterangan atau apa saja yang harus di perbaiki santri',
+            'keterangan.required'           => 'Tuliskan Keterangan atau apa saja yang harus di perbaiki santri',
 
         ];
     }

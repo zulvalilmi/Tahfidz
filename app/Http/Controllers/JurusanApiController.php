@@ -38,4 +38,48 @@ class JurusanApiController extends Controller
 
         return $jurusan;
    }
+
+   public function update(Request $request, $id)
+   {
+        $jurusan    =   jurusan::find($id);
+
+        if(!$jurusan){
+            return response()->json([
+                'status'    => 2,
+                'message'   => 'Tidak Bisa Meng-Update Jurusan',
+            ]);
+        }
+
+        $validasi   = Validator::make($request->all(),[
+            'jurusan'   => 'required',
+            'kelas'     => 'required',
+        ]);
+
+        if($validasi->fails()){
+            return $validasi->errors()->all();
+        }
+
+        $jurusan->update([
+            'jurusan'   => $request->jurusan,
+            'kelas'     => $request->kelas,
+        ]);
+
+        return response()->json([
+                'status'    => 1,
+                'message'   => 'Bisa Meng-Update Data',
+                'data'   => $jurusan,
+            ]);
+    }
+
+    public function delete($id)
+    {
+        $jurusan    = jurusan::find($id);
+
+        $jurusan->delete();
+
+        return response()->json([
+            'status'    => 1,
+            'message'   => 'Berhasil Menghapus Jurusan',
+        ]);
+    }
 }

@@ -48,6 +48,9 @@
                     </div>
                 </div>
 
+                <!-- Modal Tambah Data-->
+                @include('blade.template.modal.tambahjurusan')
+
             </div>
             </div>
                 <!-- End of Main Content -->

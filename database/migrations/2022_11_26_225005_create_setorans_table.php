@@ -15,6 +15,14 @@ return new class extends Migration
     {
         Schema::create('setorans', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_tahfidz');
+            $table->string('jurusan_id');
+            $table->string('surat_ziyadah');
+            $table->string('ayat_ziyadah');
+            $table->string('surat_murojaah');
+            $table->string('ayat_murojaah');
+            $table->string('foto');
+            $table->string('keterangan');
             $table->timestamps();
         });
     }

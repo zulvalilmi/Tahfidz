@@ -22,6 +22,8 @@ use Illuminate\Support\Facades\Route;
 Route::controller(JurusanApiController::class)->group(function () {
     Route::get('/getjurusan', 'index');
     Route::post('/addjurusan', 'add');
+    Route::put('/updatejurusan/{id}', 'update');
+    Route::delete('/deletejurusan/{id}', 'delete');
 });
 
 

@@ -50,4 +50,8 @@ Route::prefix('/Hay')->middleware(['auth'])->group(function(){
 
 
 Route::get('/warung', [App\Http\Controllers\Api\WarungController::class, 'warung']);
+
+Route::get('/wisata', [App\Http\Controllers\Api\WisataController::class, 'chart']);
+Route::get('/wisata2', [App\Http\Controllers\Api\WisataController::class, 'chart2']);
+Route::get('/chartuser', [App\Http\Controllers\Api\WisataController::class, 'chartuser']);
 // Route::get('/detail', [App\Http\Controllers\BladeController::class, 'detail'])->name('detail');
